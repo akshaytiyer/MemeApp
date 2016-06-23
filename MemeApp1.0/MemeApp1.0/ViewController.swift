@@ -19,12 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var shareButton: UIBarButtonItem!
     var memedImage: UIImage!
     
-    struct Meme {
-        var topTextField: String
-        var bottomTextField: String
-        var currentImage: UIImage
-        var memedImage: UIImage
-    }
+
     
     let memeTextAttributes = [
         NSStrokeColorAttributeName : UIColor.whiteColor(),
@@ -40,6 +35,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         topTextField.delegate = self
         topTextField.defaultTextAttributes = memeTextAttributes
         topTextField.textAlignment = NSTextAlignment.Center
+        
         //The bottom text field
         bottomTextField.text = "BOTTOM"
         bottomTextField.delegate = self
@@ -137,6 +133,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let object = UIApplication.sharedApplication().delegate
         let appDelegate = object as! AppDelegate
         appDelegate.memes.append(meme)
+        print(appDelegate.memes.count)
     }
     
     func generateMemedImage() -> UIImage
