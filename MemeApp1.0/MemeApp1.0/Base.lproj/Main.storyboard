@@ -154,7 +154,6 @@
                                 </view>
                                 <connections>
                                     <outlet property="imageView" destination="uFP-NT-LQG" id="gRk-nh-txq"/>
-                                    <segue destination="URV-Yj-ZfC" kind="show" identifier="MemeDetailCollection" id="XA0-FV-wDP"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -221,9 +220,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="URV-Yj-ZfC" kind="show" identifier="MemeDetailTable" id="5u8-0a-a6F"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -241,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="498" y="-256"/>
         </scene>
-        <!--View Controller-->
+        <!--MemeDetailViewController-->
         <scene sceneID="7dG-se-X9z">
             <objects>
-                <viewController id="URV-Yj-ZfC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeDetailViewController" title="MemeDetailViewController" id="URV-Yj-ZfC" customClass="MemeDetailViewController" customModule="MemeApp1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3eB-hb-QXB"/>
                         <viewControllerLayoutGuide type="bottom" id="6Lo-5u-Mf3"/>
@@ -253,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u1j-Qp-yoh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1j-Qp-yoh">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                         </subviews>
@@ -265,6 +261,10 @@
                             <constraint firstItem="6Lo-5u-Mf3" firstAttribute="top" secondItem="u1j-Qp-yoh" secondAttribute="bottom" id="xg1-WJ-O8h"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="u1j-Qp-yoh" id="QUY-aq-Bbr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYC-W8-uYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,7 +274,4 @@
     <resources>
         <image name="pick" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="XA0-FV-wDP"/>
-    </inferredMetricsTieBreakers>
 </document>
