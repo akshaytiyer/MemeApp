@@ -20,7 +20,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var memedImage: UIImage!
     
     let memeTextAttributes = [
-        NSStrokeColorAttributeName : UIColor.whiteColor(),
+        NSStrokeColorAttributeName : UIColor.blackColor(),
         NSForegroundColorAttributeName : UIColor.whiteColor(),
         NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
         NSStrokeWidthAttributeName : -3.0
