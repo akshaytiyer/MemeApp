@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meme View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeApp1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemeViewController" customModule="MemeApp1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -47,7 +47,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-bE-Ya8">
                                 <rect key="frame" x="-4" y="623" width="383" height="44"/>
                                 <items>
-                                    <barButtonItem image="pick" id="1r9-RT-pMk">
+                                    <barButtonItem image="Table" id="1r9-RT-pMk">
                                         <connections>
                                             <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="AUc-Oi-7Xu"/>
                                         </connections>
@@ -162,7 +162,7 @@
                             <outlet property="delegate" destination="lsq-5K-Z9i" id="8Rt-zD-FEV"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Collection" id="nxe-hC-cwl"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="Collection" id="nxe-hC-cwl"/>
                     <connections>
                         <outlet property="appCollection" destination="YNH-jn-N3V" id="DSS-pK-PAk"/>
                     </connections>
@@ -227,7 +227,7 @@
                             <outlet property="delegate" destination="njM-wK-7Jn" id="qJc-oa-9Qd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Table" id="CqT-Qw-Vgb"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="Table" id="CqT-Qw-Vgb"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Iwr-kb-5nk"/>
                     <connections>
                         <outlet property="appData" destination="x0q-zb-Vip" id="GAd-6H-8DB"/>
@@ -249,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1j-Qp-yoh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u1j-Qp-yoh">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                         </subviews>
@@ -257,8 +257,8 @@
                         <constraints>
                             <constraint firstItem="u1j-Qp-yoh" firstAttribute="leading" secondItem="KVB-yd-tdP" secondAttribute="leading" id="HLu-dt-XUg"/>
                             <constraint firstAttribute="trailing" secondItem="u1j-Qp-yoh" secondAttribute="trailing" id="Hla-yT-zp3"/>
-                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="top" secondItem="3eB-hb-QXB" secondAttribute="bottom" id="l2k-je-hfy"/>
-                            <constraint firstItem="6Lo-5u-Mf3" firstAttribute="top" secondItem="u1j-Qp-yoh" secondAttribute="bottom" id="xg1-WJ-O8h"/>
+                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="top" secondItem="3eB-hb-QXB" secondAttribute="bottom" constant="44" id="l2k-je-hfy"/>
+                            <constraint firstItem="6Lo-5u-Mf3" firstAttribute="top" secondItem="u1j-Qp-yoh" secondAttribute="bottom" constant="49" id="xg1-WJ-O8h"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -268,10 +268,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYC-W8-uYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="421"/>
+            <point key="canvasLocation" x="771" y="397"/>
         </scene>
     </scenes>
     <resources>
-        <image name="pick" width="30" height="30"/>
+        <image name="Collection" width="30" height="30"/>
+        <image name="Table" width="30" height="30"/>
     </resources>
 </document>
