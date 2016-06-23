@@ -13,6 +13,11 @@ class MemeDetailViewController: UIViewController
     var memeDetail: Meme!
     @IBOutlet var imageView: UIImageView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Meme Detail"
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         print(self.memeDetail)

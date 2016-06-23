@@ -29,6 +29,11 @@
                                             <action selector="shareImage:" destination="BYZ-38-t0r" id="LkW-dn-mrt"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="cancel" id="Avy-Bj-vMc">
+                                        <connections>
+                                            <action selector="cancelButton:" destination="BYZ-38-t0r" id="GCQ-Ry-tWp"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EKo-MG-GkN">
@@ -250,15 +255,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u1j-Qp-yoh">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="leading" secondItem="KVB-yd-tdP" secondAttribute="leading" id="HLu-dt-XUg"/>
-                            <constraint firstAttribute="trailing" secondItem="u1j-Qp-yoh" secondAttribute="trailing" id="Hla-yT-zp3"/>
-                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="top" secondItem="3eB-hb-QXB" secondAttribute="bottom" constant="44" id="l2k-je-hfy"/>
-                            <constraint firstItem="6Lo-5u-Mf3" firstAttribute="top" secondItem="u1j-Qp-yoh" secondAttribute="bottom" constant="49" id="xg1-WJ-O8h"/>
+                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="top" secondItem="KVB-yd-tdP" secondAttribute="top" id="VCs-rI-U8l"/>
+                            <constraint firstAttribute="trailing" secondItem="u1j-Qp-yoh" secondAttribute="trailing" id="ggW-Wt-5b0"/>
+                            <constraint firstItem="u1j-Qp-yoh" firstAttribute="leading" secondItem="KVB-yd-tdP" secondAttribute="leading" id="hA7-zN-WCe"/>
+                            <constraint firstAttribute="bottom" secondItem="u1j-Qp-yoh" secondAttribute="bottom" id="o5c-fx-Wi8"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

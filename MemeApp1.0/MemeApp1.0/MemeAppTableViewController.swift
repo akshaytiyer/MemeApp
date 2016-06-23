@@ -47,4 +47,5 @@ class MemeAppTableViewController: UITableViewController
         
         navigationController?.pushViewController(memeDetailVC, animated: true)
     }
+    
 }
